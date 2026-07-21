@@ -1,20 +1,28 @@
 # Check Environment Information
-conda info --env
-conda --version
-python --version
+> conda info --env
+
+> conda --version
+> python --version
 
 # To Create New Environment
+********************************************
 conda create --name py3-math python=3
 
-#Then Activate the environment
+# Then Activate the environment
 conda activate py3-math
 
 
 (base) C:\Users\hamostafa>conda activate py3-math
 
 (py3-math) C:\Users\hamostafa>python --version
+
 Python 3.14.6
-***************************************************
+
+# install necessary packages
+If you face an issue you can run install command package by package
+> conda install numpy pandas matplotlib scikit-learn
+
+**************************************************
 # To Remove environment
 
 > conda env list
