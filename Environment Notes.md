@@ -16,10 +16,16 @@ conda activate py3-math
 Python 3.14.6
 ***************************************************
 # To Remove environment
+
 > conda env list
+
 > conda env remove --name py3-ml
+
 > conda remove --name py3-ml --all
 
+> conda remove --name math --all
+
+> conda remove --name lab --all
 ***************************************************
 
 I change the setting for This project from Project Setting
@@ -47,23 +53,44 @@ C:\Users\YourName\.jupyter\jupyter_notebook_config.py
 
 C:\Users\hamostafa\.jupyter
 
+On My Laptop Machine 
+
+C:\Users\hossa\.jupyter
 open jupyter_notebook_config.py by notepad and then search for
-### DEPRECATED, use root_dir.
-### Default: ''
+
+### Inside the file   jupyter_notebook_config.py 
+
+*************************************************
+DEPRECATED, use root_dir.
+
+Default: ''
 
 c.ServerApp.notebook_dir = r'D:\hossam\Git\GitHub\math\notebooks'
+
+My Laptop
+
 c.ServerApp.notebook_dir = r'D:\hossam\Git\GitHub\math\notebooks'
+
+*************************************************
 
 # Note to change Jupyter Kernal to new Environment py3-math
 *************************************************
+### Open Anaconda prompt
 
-Open Anaconda prompt
-activate the environment
+### Activate the environment
+
 (base) C:\Users\hamostafa>conda activate py3-math
+
+### install the ipykernel
 and then install the ipykernel
-(py3-math) C:\Users\hamostafa>conda install ipykernel
-Confiler the name
-python -m ipykernel install --user --name py3-math --display-name "Python (py3-math)"
+
+> conda install ipykernel
+
+> (py3-math) C:\Users\hamostafa>conda install ipykernel
+
+### Confiler the name
+
+> python -m ipykernel install --user --name py3-math --display-name "Python (py3-math)"
 
 # To Remove its Jupyter kernel
 ****************************************************************************
