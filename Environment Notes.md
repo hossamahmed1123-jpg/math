@@ -100,6 +100,13 @@ and then install the ipykernel
 
 > python -m ipykernel install --user --name py3-math --display-name "Python (py3-math)"
 
+### If it is not working
+Try this
+
+"C:\Users\hossa\anaconda3\envs\py3-math\python.exe" -m pip install ipykernel
+
+"C:\Users\hossa\anaconda3\envs\py3-math\python.exe" -m ipykernel install --user --name py3-math --display-name "Python (py3-math)"
+
 # To Remove its Jupyter kernel
 ****************************************************************************
 
@@ -125,3 +132,29 @@ conda deactivate
 conda env remove --name py3-ml
 jupyter kernelspec uninstall py3-ml
 ********************************************************************************
+
+# Install Pytorch and TensorFlow for NVIDIA RTX 5040
+
+
+(base) C:\Users\hossa>conda info --env
+
+# conda environments:
+#
+# * -> active
+# + -> frozen
+base                 *   C:\Users\hossa\anaconda3
+py3-math                 C:\Users\hossa\anaconda3\envs\py3-math
+py3-ml                   C:\Users\hossa\anaconda3\envs\py3-ml
+
+
+(base) C:\Users\hossa>activate py3-math
+
+(py3-math) C:\Users\hossa>python -c "import sys; print(sys.executable)"
+C:\Users\hossa\anaconda3\envs\py3-math\python.exe
+
+(py3-math) C:\Users\hossa>python -m pip install --upgrade pip
+Requirement already satisfied: pip in .\anaconda3\envs\py3-math\Lib\site-packages (26.1.2)
+
+(py3-math) C:\Users\hossa>
+
+python -m pip install torch==2.12.1 torchvision==0.27.1 --index-url https://download.pytorch.org/whl/cu130

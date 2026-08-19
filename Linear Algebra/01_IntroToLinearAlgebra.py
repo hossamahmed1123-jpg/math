@@ -14,3 +14,5 @@ print(f'asList: {np.shape(asList)}')
 print(f'asArray: {asArray.shape}')
 print(f'rowVec: {rowVec.shape}')
 print(f'colVec: {colVec.shape}')
+
+print(sys.executable)
